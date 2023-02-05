@@ -1,0 +1,28 @@
+name: Call for proposals
+description: Track a call for proposal
+title: "[EVENT TITLE]"
+assignees:
+  - sagikazarmark
+body:
+  - type: input
+    id: url
+    attributes:
+      label: CfP URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: For online events use "Virtual", otherwise put the physical location in the box.
+      placeholder: ex. "Virtual", "Budapest, Hungary", etc
+    validations:
+      required: true
+  - type: textarea
+    id: thoughts
+    attributes:
+      label: Any thoughts?
+      description: Why is this event interesting? What topics look interesting for this event?
+    validations:
+      required: false
